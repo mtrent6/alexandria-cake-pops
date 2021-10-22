@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: #FFA69E;
+    height: 8vh;
+}
+
+.innerElement {
+    padding-left: 50px;
+}
+
+.buttonRow {
+    padding-left: 5vh;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    /* -ms-flex-align: center; */
+    justify-content: space-between;
+    width: 700px;
+    /* margin-bottom: 13px; */
+}
+
+h1 {
+    color: #17183B;
+    padding-left: 1vh;
+}
