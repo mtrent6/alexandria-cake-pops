@@ -1,0 +1,27 @@
+.buttonRow {
+    padding-left: 2vh;
+    padding-bottom: 1vh;
+    align-items: end;
+    display: flex;
+    flex-direction: row;
+    /* -ms-flex-align: center; */
+    justify-content: space-between;
+    width: 900px;
+    /* margin-bottom: 13px; */
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.navButtons {
+    color: white;
+    font-size: 22px;
+    /* font-family: Georgia; */
+}
+
+.logoWrapper {
+    /* position: absolute;
+    top: -1px;
+    padding-right: 10px; */
+}

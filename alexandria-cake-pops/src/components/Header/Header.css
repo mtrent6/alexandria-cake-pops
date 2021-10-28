@@ -1,26 +1,25 @@
 .header {
     display: flex;
     flex-direction: row;
-    background-color: #FFA69E;
-    height: 8vh;
+    /* background-color: black; */
+    /* opacity: 50%; */
+    background: rgba(0, 0, 0, 0.4);
+    height: 10vh;
 }
 
 .innerElement {
     padding-left: 50px;
 }
 
-.buttonRow {
-    padding-left: 5vh;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    /* -ms-flex-align: center; */
-    justify-content: space-between;
-    width: 700px;
-    /* margin-bottom: 13px; */
+h1 {
+    color: black;
+    padding-left: 1vh;
 }
 
-h1 {
-    color: #17183B;
-    padding-left: 1vh;
+.headerWrapper {
+    display: flex;
+    border-radius: 10px;
+    height: 9vh;
+    align-items: flex-end;
+    padding-left: 10px;
 }
