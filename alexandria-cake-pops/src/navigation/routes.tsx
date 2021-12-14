@@ -1,6 +1,6 @@
 import Home from "../components/Home/Home"
 import Order from "../components/Order/Order"
-import { Gallery } from "../components/Gallery/Gallery"
+import { CakePopGallery } from "../components/Gallery/Gallery"
 import { NavLink } from 'react-router-dom';
 import { ColorButton } from '../common/ColorButton'
 import './routes.css'
@@ -15,23 +15,24 @@ import {
 interface IRoute {
     name: string;
     displayName: string;
-    content?: JSX.Element;
+    route?
 }
 export const routes: IRoute[] = [
     {
         name: "home",
         displayName: "HOME",
-        content: <Home />,
+        route: <Route path={`/home`} render={(props) => <Home/>}></Route>,
     },
     {
         name: "order",
         displayName: "ORDER",
-        content: <Order />,
+        route: <Route path={`/order`} render={(props) => <Order {...props}/>}></Route>,
+
     },
     {
         name: 'gallery',
         displayName: "GALLERY",
-        content: <Gallery/>,
+        route: <Route path={`/gallery`} render={(props) => <CakePopGallery/>}></Route>,
 
     },
     {
@@ -76,7 +77,7 @@ export const Router = () => {
         {getNavigation()}
         <Switch>
             {routes.map((r, i) => {
-                return <Route path={`/${r.name}`}>{r.content}</Route>;
+                return r.route;
             })}
             <Route exact path="/">
                 <Redirect to="/home" />

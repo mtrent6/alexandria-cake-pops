@@ -1,0 +1,57 @@
+    .cWrapper {
+        height: 25vh;
+        color: white;
+        background: rgb(235, 167, 167, 0.7);
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-between; */
+    }
+    
+    .innerWrapper {
+        background: rgb(235, 167, 167, 0.1);
+    }
+    /* .imageWrapper {
+    border-right: 1px solid black;
+    /* width: 48vh;
+    position: absolute;
+    top: 0px */
+    /* } */
+    
+    .description {
+        width: 30vh;
+        height: 20vh;
+        padding: 25px;
+        color: black;
+    }
+    
+    .imageHover {
+        cursor: "pointer";
+        border: 1;
+    }
+    /* relevant styles */
+    
+    .img__wrap {
+        position: relative;
+        /* padding-top: 10; */
+    }
+    
+    .img__description {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        border: 1;
+        cursor: pointer;
+        left: 0;
+        right: 0;
+        background: rgba(10, 10, 10, 0.72);
+        color: #fff;
+        visibility: hidden;
+        opacity: 0;
+        /* transition effect. not necessary */
+        transition: opacity .2s, visibility .2s;
+    }
+    
+    .img__wrap:hover .img__description {
+        visibility: visible;
+        opacity: 1;
+    }
